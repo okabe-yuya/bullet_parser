@@ -25,6 +25,7 @@ Parse "bullet.log" file to tokens
 ```ruby
 # Please specify the path of the .log file in the argument
 tokens = BulletParser.tokens('bullet.log')
+
 ```
 
 Save parsed tokens as File(:csv)
@@ -32,6 +33,22 @@ Save parsed tokens as File(:csv)
 ```ruby
 tokens = BulletParser.tokens('bullet.log')
 BulletParser.save(tokens, extension: :csv, filename: 'bullet_log.csv')
+```
+
+### Example
+
+```ruby
+# tokens
+[#<struct BulletParser::Tokenizer::Token
+  detected_at="2023-08-15 15:20:31",
+  log_level="WARN",
+  detected_user="okabe",
+  http_method="GET",
+  end_point="/api/v1/products/tags",
+  problem="USE eager loading detected\n  Product => [:product_tags]\n  Add to your query: .includes([:product_tags])\n",
+  root_line="  /Users/okabe/ruby/app/product_tags_controller.rb:18:in `map'\n",
+  callstack=
+   "  /Users/okabe/ruby/app/product_tags_controller.rb:18:in `map'\n  /Users/okabe/ruby/app/product_tags_controller.rb:18:in `block in <class:ProductTagsCotroller>'\n  /Users/okabe/ruby/spec/requests/products/tags_spec.rb:30:in `block (3 levels) in <main>'\n">]
 ```
 
 ## Contributing
