@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["okabe-yuya"]
   spec.email = ["takamizawa46@gmail.com"]
 
-  spec.summary = "The library parses 'bullet' log files and converts them into CSV format for simplified analysis and storage."
-  # spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Parse 'bullet' log files and converts them into CSV format for simplified analysis and storage."
+  spec.homepage = "https://github.com/okabe-yuya/bullet_parser"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
