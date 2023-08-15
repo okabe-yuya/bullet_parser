@@ -1,0 +1,4 @@
+2023-08-15 15:20:31[WARN] user: okabe
+GET /api/v1/products/tags
+Need Counter Cache
+  Product => [:product_tags]

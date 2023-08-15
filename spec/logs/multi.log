@@ -1,0 +1,14 @@
+2023-08-15 15:20:31[WARN] user: okabe
+GET /api/v1/products/tags
+USE eager loading detected
+  Product => [:product_tags]
+  Add to your query: .includes([:product_tags])
+Call stack
+  /Users/okabe/ruby/app/product_tags_controller.rb:18:in `map'
+  /Users/okabe/ruby/app/product_tags_controller.rb:18:in `block in <class:ProductTagsCotroller>'
+  /Users/okabe/ruby/spec/requests/products/tags_spec.rb:30:in `block (3 levels) in <main>'
+
+2023-08-15 15:20:31[WARN] user: okabe
+GET /api/v1/products/tags
+Need Counter Cache
+  Product => [:product_tags]
